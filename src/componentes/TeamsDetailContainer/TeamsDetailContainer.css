@@ -1,0 +1,28 @@
+.img-escudo{
+    height: 170px;
+    width: auto;
+}
+
+.subtitle{
+    text-transform: uppercase;
+    color: #8d98c1 ;
+    font-size: 20px;
+}
+
+.img-equipacion{
+    height: 100px;
+}
+.arrow-back{
+
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+
+@media (max-width: 768px) {
+    .subtitle{
+        font-size: 16px;
+    }
+}
+
