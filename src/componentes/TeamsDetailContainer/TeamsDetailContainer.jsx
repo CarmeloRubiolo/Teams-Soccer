@@ -10,7 +10,7 @@ const TeamsDetailContainer = () => {
     const [teams, setTeams] = useState({})
 
     const api =() => {
-        fetch(`http://localhost:9000/api/teams/${id}`)
+        fetch(`https://teamssoccer-api-production.up.railway.app/api/teams/${id}`)
     .then((response => response.json()))
     .then(allTeams => setTeams(allTeams))
     }
@@ -27,12 +27,17 @@ const TeamsDetailContainer = () => {
                 <p className="text-center">{teams.ubicacion}</p>
             </div>
             <div className="card-body">
-            <div class="card text-center">
-            <div class="card-header bg-dark text-light">
+            <div className="card text-center">
+            <div className="card-header bg-dark text-light">
                 Datos Generales
                 </div>
-                <div class="card-body">
-                    <div class="container">
+                <div className="card-body position-relative">
+                    <Link to="/edit">
+                        <div className="edit-container">
+                            <img className="img-edit" src="../../imagenes/editar.png"/>
+                        </div>
+                    </Link>
+                    <div className="container">
                         <div className="row">
                             <div className="col-6 text-start mb-5">
                                 <span className="subtitle">Apodo</span> <br/>{teams.apodo}
@@ -50,7 +55,10 @@ const TeamsDetailContainer = () => {
                                <span className="subtitle">Presidente</span>  <br/> {teams.presidente}
                             </div>
                             <div className="col-6 text-start mb-5">
-                               <span className="subtitle">Equipacion</span>  <br/> <img className=" img-equipacion" src={teams.equipacion} alt={teams.name} />
+                               <span className="subtitle">Equipacion</span>  <br/> <img className="mt-2 img-equipacion" src={teams.equipacion} alt={teams.name} />
+                            </div>
+                            <div className="col-12 text-center mb-5">
+                               <span className="subtitle">Estadio</span>  <br/> <img className=" img-estadio mt-2" src={teams.imgEstadio} alt={teams.name}></img>
                             </div>
                         </div>
                     </div>

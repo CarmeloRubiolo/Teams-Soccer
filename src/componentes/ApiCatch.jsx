@@ -1,6 +1,6 @@
 
     const apiCatch = (setTeams) => {
-        fetch('http://localhost:9000/api/teams/')
+        fetch('https://teams-soccer-api.onrender.com')
         .then(response => response.json())
         .then(allTeams => setTeams(allTeams))
       }

@@ -12,17 +12,29 @@
 .img-equipacion{
     height: 100px;
 }
+.edit-container{
+    display:flex;
+    justify-content: flex-end;
+}
+.img-edit{
+    height: 40px;
+}
 .arrow-back{
-
     position: absolute;
     height: 60px;
     width: 60px;
+}
+.img-estadio{
+    width: 100%
 }
 
 
 @media (max-width: 768px) {
     .subtitle{
         font-size: 16px;
+    }
+    .img-edit{
+        height: 30px;
     }
 }
 
