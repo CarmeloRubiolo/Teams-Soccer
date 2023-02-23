@@ -43,10 +43,10 @@ const TeamsDetailContainer = () => {
                                 <span className="subtitle">Apodo</span> <br/><p className="detail-data text-center">{teams.apodo}</p>
                             </div>
                             <div className="col text-center mb-5">
-                               <span className="subtitle">Año de fundación</span>  <br/> <p className="detail-data text-center">{teams.fundacion}</p>
-                            </div>
-                            <div className="col text-center mb-5">
                                <span className="subtitle">Títulos</span>  <br/> <p className="detail-data text-center">{teams.titulos}</p>
+                            </div>
+                            <div className="col-12 text-center mb-5">
+                               <span className="subtitle">Año de fundación</span>  <br/> <p className="detail-data text-center">{teams.fundacion}</p>
                             </div>
                             <div className="col text-center mb-5">
                                <span className="subtitle">Socios</span>  <br/> <p className="detail-data text-center">{teams.socios}</p>
@@ -54,7 +54,7 @@ const TeamsDetailContainer = () => {
                             <div className="col text-center mb-5">
                                <span className="subtitle">Presidente</span>  <br/> <p className="detail-data text-center">{teams.presidente}</p>
                             </div>
-                            <div className="col text-center mb-5">
+                            <div className="col-12 text-center mb-5">
                                <span className="subtitle">Equipacion</span>  <br/> <img className="img-equipacion" src={teams.equipacion} alt={teams.name} />
                             </div>
                             <div className="col-12 text-center mb-5">
