@@ -39,23 +39,23 @@ const TeamsDetailContainer = () => {
                     </Link>
                     <div className="container">
                         <div className="row">
-                            <div className="col-6 text-start mb-5">
-                                <span className="subtitle">Apodo</span> <br/>{teams.apodo}
+                            <div className="subtitle-container col text-center mb-5">
+                                <span className="subtitle">Apodo</span> <br/><p className="detail-data text-center">{teams.apodo}</p>
                             </div>
-                            <div className="col-6 text-start mb-5">
-                               <span className="subtitle">Año de fundación</span>  <br/> {teams.fundacion}
+                            <div className="col text-center mb-5">
+                               <span className="subtitle">Año de fundación</span>  <br/> <p className="detail-data text-center">{teams.fundacion}</p>
                             </div>
-                            <div className="col-6 text-start mb-5">
-                               <span className="subtitle">Marca de equipación</span>  <br/> {teams.fundacion}
+                            <div className="col text-center mb-5">
+                               <span className="subtitle">Títulos</span>  <br/> <p className="detail-data text-center">{teams.titulos}</p>
                             </div>
-                            <div className="col-6 text-start mb-5">
-                               <span className="subtitle">Patrocinador</span>  <br/> {teams.fundacion}
+                            <div className="col text-center mb-5">
+                               <span className="subtitle">Socios</span>  <br/> <p className="detail-data text-center">{teams.socios}</p>
                             </div>
-                            <div className="col-6 text-start mb-5">
-                               <span className="subtitle">Presidente</span>  <br/> {teams.presidente}
+                            <div className="col text-center mb-5">
+                               <span className="subtitle">Presidente</span>  <br/> <p className="detail-data text-center">{teams.presidente}</p>
                             </div>
-                            <div className="col-6 text-start mb-5">
-                               <span className="subtitle">Equipacion</span>  <br/> <img className="mt-2 img-equipacion" src={teams.equipacion} alt={teams.name} />
+                            <div className="col text-center mb-5">
+                               <span className="subtitle">Equipacion</span>  <br/> <img className="img-equipacion" src={teams.equipacion} alt={teams.name} />
                             </div>
                             <div className="col-12 text-center mb-5">
                                <span className="subtitle">Estadio</span>  <br/> <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img className=" img-estadio mt-2" src={teams.imgEstadio} alt={teams.name}></img></div>

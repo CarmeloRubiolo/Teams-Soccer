@@ -1,18 +1,6 @@
-/* body{
+body{
     background: rgb(0,84,167);
     background: linear-gradient(190deg, rgba(0,84,167,1) 0%, rgba(146,62,154,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
-} */
-
-/* @media (min-width: 300px) {
-    body {
-        height: 310vh;
-    }
 }
-
-@media (min-width: 1600px) {
-    body {
-        height: 100vh;
-    }
-} */

@@ -6,6 +6,7 @@ import NavBar from './componentes/NavBar/NavBar';
 import "./App.css"
 import TeamsContext from './context/TeamsContext';
 import EditTeams from './componentes/EditTeams/EditTeams';
+import Footer from './componentes/Footer/Footer';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/edit" element={<EditTeams />} />
         </Routes>
       </TeamsContext>
+        <Footer/>
     </BrowserRouter>
       
       );

@@ -7,7 +7,13 @@
 .subtitle{
     text-transform: uppercase;
     color: #8d98c1 ;
-    font-size: 20px;
+    font-size: 30px;
+}
+.subtitle-container{
+    width: 400px;
+}
+.detail-data{
+    font-size: 25px;
 }
 
 .img-equipacion{
@@ -28,7 +34,7 @@
 .img-estadio{
     border: 1px solid black;
     border-radius: 5%;
-    width: 100%
+    width: 800px;
 }
 .imgEstadio-modal{
     height: auto;
@@ -42,6 +48,14 @@
     }
     .img-edit{
         height: 30px;
+    }
+    .img-estadio{
+        border: 1px solid black;
+        border-radius: 5%;
+        width: 100%
+    }
+    .detail-data{
+        font-size: 20px;
     }
 }
 
